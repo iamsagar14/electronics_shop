@@ -1,7 +1,10 @@
+import 'package:electronicss_shop/screens/cart_screen.dart';
+import 'package:electronicss_shop/screens/form_screen.dart';
 import 'package:electronicss_shop/screens/home_screen.dart';
 import 'package:electronicss_shop/screens/login_screen.dart';
 import 'package:electronicss_shop/screens/registration_screen.dart';
 import 'package:electronicss_shop/screens/welcome_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +31,8 @@ class MyApp extends StatelessWidget {
         LoginScreen.id: (context) => LoginScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
         HomeScreen.id: (context) => HomeScreen(),
+        FormScreen.id: (context) => FormScreen(),
+        CartScreen.id: (context) => CartScreen(),
       },
     );
   }
